@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.databases.controllers.MainSceneController">
+   <children>
+      <TableView fx:id="table" layoutX="127.0" layoutY="128.0" prefHeight="249.0" prefWidth="362.0">
+        <columns>
+          <TableColumn fx:id="col1" prefWidth="106.0" text="id" />
+          <TableColumn fx:id="col2" prefWidth="122.0" text="name" />
+            <TableColumn fx:id="col3" prefWidth="133.0" text="amount" />
+        </columns>
+      </TableView>
+      <Label layoutX="39.0" layoutY="39.0" prefHeight="17.0" prefWidth="44.0" text="id" />
+      <Label layoutX="269.0" layoutY="39.0" prefHeight="17.0" prefWidth="44.0" text="name" />
+      <Label layoutX="39.0" layoutY="73.0" prefHeight="17.0" prefWidth="44.0" text="amount" />
+      <TextField fx:id="idfield" layoutX="98.0" layoutY="35.0" prefHeight="11.0" prefWidth="50.0" />
+      <TextField fx:id="namefield" layoutX="327.0" layoutY="35.0" />
+      <TextField fx:id="amountfield" layoutX="98.0" layoutY="69.0" />
+      <Button fx:id="button" layoutX="337.0" layoutY="78.0" mnemonicParsing="false" onAction="#addData" prefHeight="25.0" prefWidth="109.0" text="Submit" />
+   </children>
+</AnchorPane>
